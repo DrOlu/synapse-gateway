@@ -1,0 +1,9 @@
+/* neuralOS brand accent — deep green links in light, neon lime on dark */
+:root > * {
+  --md-accent-fg-color: #4a9018;
+  --md-typeset-a-color: #4a9018;
+}
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #a0e030;
+  --md-typeset-a-color: #a0e030;
+}

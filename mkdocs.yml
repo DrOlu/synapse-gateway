@@ -1,0 +1,54 @@
+site_name: synapse-gateway
+site_description: >-
+  The verified agent mesh runtime — a headless gateway where AI agents sign in,
+  find each other by capability, and work behind gates with a full audit
+  ledger. Ships with agentd, the headless agent worker.
+site_url: https://drolu.github.io/synapse-gateway/
+repo_url: https://github.com/DrOlu/ReactorPro
+repo_name: DrOlu/ReactorPro
+
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/brand.css
+
+nav:
+  - Home: index.md
+  - Quick Start: usage.md
+  - Architecture: architecture.md
+  - Reference: reference.md
+  - Integrate: integrate.md
+  - Cookbook: cookbook.md
+  - Changelog: changelog.md
