@@ -97,8 +97,14 @@ the ticket programmatically.
 -mesh-invoke-operations task \
 -mesh-invoke-timeout 10m \
 -mesh-rate-limit-per-second 20 \
--mesh-accepted-versions v1
+-mesh-accepted-versions v1 \
+-mesh-encryption require
 ```
+
+`-mesh-encryption require` seals every cross-org payload to the receiving
+edge's X25519 key (advertised in the mesh manifest) — the broker routes
+ciphertext only. Combine with `verify-mode require` + pinned peers for the
+full zero-trust posture.
 
 Discovery is public; **invocation is verified, allow-listed, time-bounded
 and rate-limited**.
