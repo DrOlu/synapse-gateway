@@ -13,13 +13,13 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: deep purple
+      primary: custom
       accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: deep purple
+      primary: custom
       accent: custom
       toggle:
         icon: material/brightness-4

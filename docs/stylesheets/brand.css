@@ -1,9 +1,20 @@
-/* neuralOS brand accent — deep green links in light, neon lime on dark */
+/* neuralOS brand — NEON lime header bar like neuralos.ng / the neuralosd docs
+   neon #a0e030 bar · near-black text on it · deep green links in light mode */
+
 :root > * {
+  /* the header bar */
+  --md-primary-fg-color: #a0e030;          /* NEON lime */
+  --md-primary-bg-color: #061a0a;          /* near-black text on the bar */
+  --md-primary-fg-color--light: #a0e030;
+  --md-primary-fg-color--dark: #a0e030;
+  /* links: deep green in light mode (lime on white is unreadable) */
   --md-accent-fg-color: #4a9018;
   --md-typeset-a-color: #4a9018;
 }
+
 [data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #a0e030;
+  --md-primary-bg-color: #061a0a;
   --md-accent-fg-color: #a0e030;
   --md-typeset-a-color: #a0e030;
 }
